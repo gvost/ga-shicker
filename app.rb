@@ -6,7 +6,6 @@ bands = ['Nine Inch Nails', 'Justin Beiber', 'Katy Perry', 'Spoon', 'Radiohead',
 venues = ["Hollywood Bowl", "The Greek", "Gramma's Livingroom", "Staples", "The Roxy"]
 seats = ["VIP", "GA", "PL (parking lot)"]
 
-
 get '/' do
 	@bands = bands
 	@venues = venues
