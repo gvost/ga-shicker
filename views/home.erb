@@ -1,0 +1,72 @@
+<head>
+	<style>
+		/*body {
+			font-family: sans-serif;
+			font-weight: 200;
+			background-color: #998585;
+			color: #f3f3f3;
+			text-align: center;
+			padding-top: 100px;
+		}
+		h1, h2, p {
+			font-weight: 200;
+		}
+		p {
+			font-size: 14px;
+		}*/
+	</style>
+	<link rel="stylesheet" href="css/stylez.css">
+</head>
+
+<h1>Concert Picker</h1>
+<h2>Welcome</h2>
+
+<form action="/results" method="get">
+
+	<p>Please select a band...</p>
+	<select name="bands" id="bands">
+
+		<% @bands.each do |band| %>
+		  <option value="<%= band %>"><%= band %></option>
+		<% end %>
+		<!-- <option value="steve">doug</option> -->
+	</select>	
+
+	<p>Please select a venue...</p>
+	<select name="venues" id="venues">
+
+		<% @venues.each do |venue| %>
+		  <option value="<%= venue %>"><%= venue %></option>
+		<% end %>
+
+
+	</select>
+
+	<p>Please select a seat assignment
+		...</p>
+	<select name="seats" id="seats">
+
+		<% @seats.each do |seat| %>
+		  <option value="<%= seat %>"><%= seat %></option>
+		<% end %>
+
+
+	</select>
+
+	<br><br>
+	<input type="submit" value="Next">
+	
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
